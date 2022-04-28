@@ -6,10 +6,10 @@ if __name__ == "__main__":
 
     if len(argv) == 1:
         print("0 arguments.")
-    if len(argv) == 2:
-        print("{:d}:".format(len(argv)-1))
+    elif len(argv) == 2:
+        print("{} argument:".format(len(argv)-1))
     else:
-        print("{:d}:".format(len(argv)-1))
+        print("{} arguments:".format(len(argv)-1))
     while i + 1 < len(argv) + 1:
         print(f"{i}: {argv[i]}")
         i = i + 1
