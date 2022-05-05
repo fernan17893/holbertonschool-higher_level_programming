@@ -1,8 +1,10 @@
-
 #!/usr/bin/python3
 import hidden_4
 if __name__ == "__main__":
-    words = dir(hidden_4)
-    for j in words:
-        if j[0] != '_' and j[1] != '_':
-            print("{}".format(j))
+    idx = 0
+    module = dir(hidden_4)
+    for i in range(len(module)):
+        word = module[idx]
+        if word[0] != "_":
+            print(word)
+        idx += 1
