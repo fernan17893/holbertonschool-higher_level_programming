@@ -1,10 +1,8 @@
 
 #!/usr/bin/python3
-
+import hidden_4
 if __name__ == "__main__":
-    import hidden_4
-
-    names = dir(hidden_4)
-    for name in names:
-        if name[:2] != "__":
-            print(name)
+    words = dir(hidden_4)
+    for j in words:
+        if j[0] != '_' and j[1] != '_':
+            print("{}".format(j))
