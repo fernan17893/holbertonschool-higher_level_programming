@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-class Square:
-   def my_square(self):
-       print("{}")
+""" Module contains class square """
 
-s = Square()
-s.my_square()
+
+
+class Square:
+    """ Defines a class Square """
+    pass
