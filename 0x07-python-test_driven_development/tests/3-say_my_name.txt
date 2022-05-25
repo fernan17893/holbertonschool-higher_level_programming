@@ -1,0 +1,42 @@
+
+=======================
+3. Say My Name module
+=======================
+
+import module
+=============
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Function
+========
+Function that prints first and last name
+
+Operations
+==========
+first_name and last_name must be strings otherwise raise a TypeError with the message 'first_name must be a string' or 'last_name must be a string'
+
+Using Say My Name module
+========================
+
+Test #1: Two strings
+    >>> say_my_name(Fern, Cool)
+    Fern Cool
+
+=========================
+Test Cases that dont work
+=========================
+
+Test #2: An int and a string
+    >>> say_my_name(3, Cool)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+Test #3: A string and an int
+    >>> say_my_name(Fern, 3)
+    Traceback (most recent call last):
+    TypeError: second_name must be a string
+
+Test #4: Empty strings
+    >>> say_my_name()
+    Traceback (most recent call last):
+    TypeError: first_name() missing required argument: 'first_name'
