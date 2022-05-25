@@ -2,7 +2,6 @@
 """ Module contains class rectangle """
 
 
-
 class Rectangle:
-   """ Defines a class Rectangle """
-   pass
+    """ Defines a class Rectangle """
+    pass
