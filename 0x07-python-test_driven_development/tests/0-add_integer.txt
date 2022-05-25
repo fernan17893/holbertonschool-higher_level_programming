@@ -1,0 +1,62 @@
+
+==========================
+0. Integer add module
+==========================
+
+import module
+=============
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+
+Function:
+=========
+Write a function that adds 2 integers
+
+Operations
+==========
+'a' and 'b' must be integers or float, otherwise raise TypeError
+with message 'a must be an integer' or 'b must be an integer'
+
+
+Using Integer add module
+========================
+
+Test #0: Two integers
+    >>> add_integer(1,2)
+    3
+
+Test #1: Integer and a float
+    >>> add_integer(6, 2.7)
+    8.7
+
+Test #2: Two floats
+    >>> add_integer(5.5, 10.5)
+    16
+
+Test #3: Float and a integer
+    >>> add_integer(5.5, 2)
+    7.5
+
+Test #4: Negative floats
+    >>> add_integers(-6.5, -5)
+    -11
+
+Test #5: Test with first paramater as 'None'
+    >>> add_integer(None, 2)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Test #6: Test with second parameter as 'None'
+    >>> add_integer(2, None)
+    Traceback (most recent call last):
+    Type Error: b must be an integer
+
+Test #7: Test without parameters
+    >>> add_integer()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing required argument: 'a'
+
+Test #8: Test for argument with no assinged value
+    >>> add_integer(a, 23)
+    Traceback (most recent call last):
+    NameError: name 'a' is not defined
