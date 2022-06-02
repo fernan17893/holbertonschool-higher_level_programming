@@ -2,10 +2,10 @@
 """ Defines class that inherits class MyList. """
 
 
-class Mylist(list):
+class MyList(list):
     """ Class inherited from list """
 
     def print_sorted(self):
-        sorti = self.copy()
-        sorti.sort()
-        print(sorti)
+        """ prints list in sorted ascending order"""
+        if issubclass(MyList, list):
+            print(sorted(self))
