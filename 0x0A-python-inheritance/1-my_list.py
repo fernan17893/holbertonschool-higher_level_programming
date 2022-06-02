@@ -3,8 +3,9 @@
 
 
 class Mylist(list):
-    """ Prints sorted list for built in list class """
+    """ Class inherited from list """
 
     def print_sorted(self):
-        """ Print list in sorted ascending order """
-        print(sorted(self))
+        sorti = self.copy()
+        sorti.sort()
+        print(sorti)
