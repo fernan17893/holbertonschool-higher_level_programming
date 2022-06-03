@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+""" Read file to stdout """
+
+
 def read_file(filename=""):
-    with open("my_file_0.txt", encoding="utf-8") as f:
-        print(f.read())
+    """ read text file and print to stdout """
+    with open(filename, encoding="utf-8") as f:
+        read = f.read()
+    print(read, end="")
