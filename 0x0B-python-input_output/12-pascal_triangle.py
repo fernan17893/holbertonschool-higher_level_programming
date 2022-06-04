@@ -4,12 +4,11 @@
 
 def pascal_triangle(n):
     """ Pascal's Triangle of size n.
-        Returns list of integers representing triangle 
+        Returns list of integers representing triangle
         """
 
     if n <= 0:
         return []
-
 
     triangle = [[1]]
     while len(triangle) != n:
