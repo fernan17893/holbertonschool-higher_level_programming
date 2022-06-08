@@ -74,11 +74,31 @@ class Rectangle(Base):
 
     def display(self):
         """ print # symbol """
-        for i in range(self.height):
-            [print("#", end="") for j in range(self.width)]
-            print("")
+        new_str = ""
+        for i in range(self.__y):
+            new_str += '\n'
+        for i in range(self.__height):
+            for i in range(self.__x):
+                new_str += ' '
+            for j in range(self.__width):
+                new_str += '#'
+            print(new_str)
+            if i in range(self.__height - 1):
+               new_str += '\n'
+            new_str = ""
 
     def __str__(self):
         """ updates class overiding __str__ method """
         str = (f"({self.id}) {self.x}/{self.y} - {self.width}/{self.height}")
         return (f"[Rectangle] {str}")
+
+    def update(self, *args, **kwargs):
+        """assigns an argument to each attribute"""
+        if len(args) > 0:
+            my_list = ['id', 'width', 'height', 'x', 'y']
+            for i in range(len(args)):
+                if i < len(my_list):
+                    setattr(self, my_list[i], args[i])
+        elif len(kwargs) > 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
