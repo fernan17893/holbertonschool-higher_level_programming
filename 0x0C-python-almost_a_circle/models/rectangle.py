@@ -31,7 +31,6 @@ class Rectangle(Base):
         """ property retrieves instace height """
         return self.__height
 
-
     @height.setter
     def height(self, value):
         """ set private instance height """
@@ -69,7 +68,6 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
-
     def area(self):
         """ return rectangle area """
         return self.height * self.width
@@ -77,12 +75,10 @@ class Rectangle(Base):
     def display(self):
         """ print # symbol """
         for i in range(self.height):
-            [print("#", end ="") for j in range(self.width)]
+            [print("#", end="") for j in range(self.width)]
             print("")
 
     def __str__(self):
         """ updates class overiding __str__ method """
         str = (f"({self.id}) {self.x}/{self.y} - {self.width}/{self.height}")
         return (f"[Rectangle] {str}")
-
-
