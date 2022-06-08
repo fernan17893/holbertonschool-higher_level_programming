@@ -22,7 +22,7 @@ class Rectangle(Base):
         """ sets private instance width """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if value < 0:
+        if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
 
@@ -51,7 +51,7 @@ class Rectangle(Base):
         """ to set private instance x"""
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
-        if value <= 0:
+        if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
 
