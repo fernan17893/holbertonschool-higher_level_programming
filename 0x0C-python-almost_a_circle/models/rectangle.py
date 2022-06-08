@@ -84,7 +84,7 @@ class Rectangle(Base):
                 new_str += '#'
             print(new_str)
             if i in range(self.__height - 1):
-               new_str += '\n'
+                new_str += '\n'
             new_str = ""
 
     def __str__(self):
