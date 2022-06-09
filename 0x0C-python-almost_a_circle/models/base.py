@@ -57,7 +57,7 @@ class Base:
         try:
             with open(cls.__name__ + ".json", "r", encoding="utf-8") as a_file:
                 pass
-        except:
+        except a_file.DoesNotExist:
             return []
         with open(cls.__name__ + ".json", "r", encoding="utf-8") as a_file:
             instanceList = cls.from_json_string(a_file.read())
