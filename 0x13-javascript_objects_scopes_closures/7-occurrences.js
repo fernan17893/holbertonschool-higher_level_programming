@@ -6,6 +6,6 @@ for (item of list.length) {
 	if (item == searchElement) {
 	counter++;
 	}
-  };
+  };howdy hwody
 	console.log(counter);
 };
