@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     cur = db.cursor()
     cur.execute("select * FROM states\
-    WHERE name like 'N%'
+    WHERE name like 'N%'\
     ORDER BY id ASC")
     for row in cur.fetchall():
         print(row)
