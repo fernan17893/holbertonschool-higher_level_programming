@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ Fetches URL """
-from encodings import utf_8
 import urllib.request
 
 if __name__ == "__main__":

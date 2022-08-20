@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ Display value of header X-Request-Id """
-from multiprocessing.sharedctypes import Value
 import sys
 from urllib.request import Request, urlopen
 
