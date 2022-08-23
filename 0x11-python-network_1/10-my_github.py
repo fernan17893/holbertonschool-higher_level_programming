@@ -2,7 +2,7 @@
 """Script takes Python credentials and displays id"""
 import sys
 import requests
-
+from requests.auth import HTTPBasicAuth
 
 if __name__ == "__main__":
     base = HTTPBasicAuth(sys.argv[1], sys.argv[2])
