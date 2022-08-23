@@ -5,7 +5,6 @@ import requests
 
 
 if __name__ == "__main__":
-    user = sys.argv[1]
-    passw = sys.argv[2]
-r = requests.get('https://api.github.com/user', auth=(user, passw))
+    base = HTTPBasicAuth(sys.argv[1], sys.argv[2])
+r = requests.get("https://api.github.com/user", auth=base)
 print(r.json().get("id"))
