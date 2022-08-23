@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Script takes Python credentials and displays id """
+"""Script takes Python credentials and displays id"""
 import sys
 import requests
 
