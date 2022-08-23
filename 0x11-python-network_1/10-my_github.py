@@ -10,5 +10,4 @@ if __name__ == "__main__":
     passw = sys.argv[2]
 
 r = requests.get('https://api.github.com/user', auth=(user, passw))
-rson = r.json()
-print(rson.get("id"))
+print(r.json().get("id"))
