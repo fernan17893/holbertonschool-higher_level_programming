@@ -8,6 +8,5 @@ axios.get(process.argv[2])
     console.log('code: ', resp.status);
   })
   .catch(error => {
-    if (error.response)
-    console.log('code: ', error.response.status);
+    if (error.response) { console.log('code: ', error.response.status); }
   });
