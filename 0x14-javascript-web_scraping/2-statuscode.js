@@ -1,0 +1,8 @@
+#!/usr/bin/node
+/* display the status of a GET request */
+
+const axios = require('axios');
+
+axios.get(process.argv[2]).then(resp => {
+  console.log('code: ', resp.status);
+});
