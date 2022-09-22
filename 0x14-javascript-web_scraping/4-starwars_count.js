@@ -1,5 +1,5 @@
 #!/usr/bin/node
-/*Script prints the number of movies where Wedge Antilles is present */
+/* Script prints the number of movies where Wedge Antilles is present */
 
 const axios = require('axios');
 let appearance = 0;
@@ -21,4 +21,3 @@ axios.get(process.argv[2])
       console.log(`code: ${error.response.status}`);
     }
   });
-
